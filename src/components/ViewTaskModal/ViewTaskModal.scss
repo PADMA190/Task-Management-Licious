@@ -1,0 +1,100 @@
+.vtm-badges {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+  align-items: center;
+}
+
+.vtm-badge {
+  font-size: 0.61rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 20px;
+
+  &.overdue {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+  }
+}
+
+/* Title */
+.vtm-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+
+  &.done {
+    text-decoration: line-through;
+    opacity: 0.55;
+  }
+}
+
+/* Description */
+.vtm-desc {
+  color: var(--text2);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin: 0 0 0.85rem;
+}
+
+/* Date */
+.vtm-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  margin-bottom: 1.1rem;
+  color: var(--text2);
+
+  &.overdue {
+    color: var(--red);
+  }
+}
+
+/* Actions */
+.vtm-actions {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.vtm-btn {
+  padding: 0.55rem 0.9rem;
+  border-radius: 9px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.18s;
+
+  &.toggle {
+    flex: 1;
+    min-width: 90px;
+    border: none;
+  }
+
+  &.edit {
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--text);
+
+    &:hover {
+      background: var(--hover);
+    }
+  }
+
+  &.delete {
+    border: none;
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+
+    &:hover {
+      background: rgba(239, 68, 68, 0.18);
+    }
+  }
+}

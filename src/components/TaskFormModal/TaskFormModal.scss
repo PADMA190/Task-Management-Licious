@@ -1,0 +1,83 @@
+.tf-field {
+  margin-bottom: 0.85rem;
+}
+
+.tf-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text2);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.28rem;
+}
+
+.tf-input {
+  width: 100%;
+  padding: 0.58rem 0.85rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  outline: none;
+  font-size: 0.85rem;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+.tf-textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.tf-error {
+  color: var(--red);
+  font-size: 0.72rem;
+  margin-top: 2px;
+  display: block;
+}
+
+/* Grid */
+.tf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 0.85rem;
+}
+
+/* Actions */
+.tf-actions {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.tf-btn {
+  padding: 0.62rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.83rem;
+  cursor: pointer;
+
+  &.cancel {
+    flex: 1;
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--text);
+  }
+
+  &.save {
+    flex: 2;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(99, 102, 241, 0.4);
+    }
+  }
+}

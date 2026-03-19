@@ -1,0 +1,70 @@
+.dcm-wrapper {
+  text-align: center;
+}
+
+.dcm-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 1rem;
+}
+
+.dcm-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.dcm-text {
+  color: var(--text2);
+  font-size: 0.82rem;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 1.3rem;
+
+  strong {
+    color: var(--text);
+  }
+}
+
+.dcm-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.dcm-btn {
+  flex: 1;
+  padding: 0.62rem;
+  border-radius: 10px;
+  font-size: 0.83rem;
+  cursor: pointer;
+
+  &.cancel {
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  &.delete {
+    border: none;
+    background: #ef4444;
+    color: #fff;
+    font-weight: 700;
+    transition: opacity 0.18s;
+
+    &:hover {
+      opacity: 0.88;
+    }
+  }
+}

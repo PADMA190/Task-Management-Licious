@@ -1,0 +1,74 @@
+.header {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.75);
+
+  [data-theme='dark'] & {
+    background: rgba(22,25,39,0.7);
+  }  
+  //background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 0 clamp(0.9rem, 3vw, 2rem);
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 200;
+
+  box-shadow: 0 1px 20px var(--shadow);
+  transition: background 0.3s, border 0.3s;
+
+  &-left {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  &-logo {
+    width: 33px;
+    height: 33px;
+    border-radius: 9px;
+    background: var(--accent);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+  }
+
+  &-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--text);
+
+    &-accent {
+      color: var(--accent);
+    }
+  }
+
+  &-toggle-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+
+    border: 1.5px solid var(--border);
+    background: var(--hover);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text2);
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

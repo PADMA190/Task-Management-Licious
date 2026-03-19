@@ -1,0 +1,103 @@
+.kanban-column {
+  background: var(--col-bg);
+  border-radius: 16px;
+  border: 1.5px solid var(--border);
+  overflow: hidden;
+  transition: background 0.25s, border 0.25s;
+
+  &.drag-over {
+    background: rgba(99, 102, 241, 0.06);
+    border-color: var(--accent);
+  }
+}
+
+/* Header */
+.kanban-column-header {
+  padding: 11px 13px 10px;
+  border-bottom: 1.5px solid var(--border);
+  background: var(--col-hdr);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: background 0.3s;
+}
+
+.kanban-column-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.kanban-column-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.kanban-column-name {
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.kanban-column-count {
+  padding: 1px 8px;
+  border-radius: 20px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+/* Add button */
+.kanban-add-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+
+  border: 1.5px solid var(--border);
+  background: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--text2);
+  transition: all 0.18s;
+
+  &:hover {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+}
+
+/* Body */
+.kanban-column-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-height: 100px;
+}
+
+/* Empty state */
+.kanban-empty {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--text3);
+
+  &-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &-text {
+    font-size: 0.77rem;
+    font-weight: 500;
+  }
+}

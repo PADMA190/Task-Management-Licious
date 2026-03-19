@@ -1,0 +1,126 @@
+.filter-bar {
+  background: var(--card);
+  border-radius: 13px;
+  padding: 9px 13px;
+  border: 1.5px solid var(--border);
+  margin-bottom: 1.1rem;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  box-shadow: 0 2px 12px var(--shadow);
+}
+
+/* Search */
+.filter-search {
+  flex: 1 1 180px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: var(--input-bg);
+  border-radius: 9px;
+  padding: 7px 10px;
+  border: 1.5px solid var(--border);
+
+  transition: border 0.2s;
+
+  &.focused {
+    border-color: var(--accent);
+  }
+
+  &-icon {
+    color: var(--text2);
+    flex-shrink: 0;
+    display: flex;
+  }
+}
+
+.filter-input {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  outline: none;
+  font-size: 0.83rem;
+  width: 100%;
+}
+
+.filter-clear-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--text2);
+  padding: 0;
+  display: flex;
+}
+
+/* Divider */
+.tf-vdivider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+/* Priority */
+.filter-priority {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-icon {
+  color: var(--text2);
+  display: flex;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  color: var(--text2);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.filter-select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 0.77rem;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Create button */
+.filter-create-btn {
+  margin-left: auto;
+
+  padding: 7px 15px;
+  border-radius: 9px;
+  border: none;
+
+  background: var(--accent);
+  color: #fff;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+  transition: all 0.2s;
+  white-space: nowrap;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(99, 102, 241, 0.45);
+  }
+}
