@@ -97,7 +97,7 @@ const TaskFormModal = ({ task, defaultCol, onSave, onClose }) => {
         </div>
 
         <div>
-          <label className="tf-label">Column</label>
+          <label className="tf-label">Status</label>
 
           <select
             value={form.col}
